@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* :root{ */
+    /* --white-color:#ffff;
+    --lightgreen-color: #99DA2D;
+    --green-color: #7BC61C;
+    --lightblue-color: #318EFB;
+    --seablue-color: #3A6EB2;
+    --blue-color: #3168F9;
+    --navy-color: #2B3499;
+    --black-color: #0000;
+    --purple-color: #B4B6ED;
+    --bluegradient-color: linear-gradient(to bottom right, #318EFB, #1845BB);
+    --big-font: 6rem;
+    --medium-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem; */
+/* } */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 18%;
+    transition: ease .40s;
+    background-color: #2B3499;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+h1 {
+    font-size: 15px;
+    margin-left: 0;
+}
+
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 100px;
+    background: rgba();
+    display: flex;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-bar form {
+    background: transparent;
+    flex: 1;
+    height: 200vh;
+    left: 100%;
+    border: 0;
+    outline: none;
+    padding: 24px 20px; 
+    font-size: 12px;
+    size: 10%;
+    position: absolute;
+    left: 80%;
+}
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    align-items: end;
+    border: none;
+
+}
+.navbar a{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 4px;
+    transition: ease .40s;
+    text-align:center;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 100px 18%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100vh;
+}
+
+#contact{
+    background: #1845BB;
+}
+
+.main{
+    display: flex;
+}
+
+.news{
+    padding: 10rem;
+}
+
+.footer{
+    padding: 15px 0;
+}
+
+.list{
+    width: 25%;
+}
+
+.list h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.list ul li{
+    margin-bottom: 16px;
+}
+
+.list ul li a{
+    color: #fff;
+    display: block;
+    transition: .3s;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+
+
+label {
+	background: #444;
+	color: #fff;
+	transition: transform 400ms ease-out;
+	display: inline-block;
+  min-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 100vh;
+}
+
+form {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	white-space: nowrap;
+}
+input {
+	position: absolute;
+}
+
+.keys {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	transition: all 300ms linear;
+	opacity: 0;
+}
+
+input:focus ~ .keys {
+	opacity: 0.8;
+}
+
+input:nth-of-type(1):checked ~ label:nth-of-type(1), 
+input:nth-of-type(2):checked ~ label:nth-of-type(2),
+input:nth-of-type(3):checked ~ label:nth-of-type(3),
+input:nth-of-type(4):checked ~ label:nth-of-type(4){
+   z-index: 0;
+}
+
+input:nth-of-type(1):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked ~ label {
+	transform: translate3d(-100%, 0, 0);
+}
+
+input:nth-of-type(3):checked ~ label {
+	transform: translate3d(-200%, 0, 0);
+}
+
+input:nth-of-type(4):checked ~ label {
+	transform: translate3d(-300%, 0, 0);
+}
+
+label {
+	background: #444;
+	background-size: cover;
+	font-size: 3rem;
+}
+
+label[for="diamonds"],
+label[for="hearts"] {
+	background: #cc0000;
+}
+
+label:before,
+label:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 1rem;
+	font-size: 3rem;
+	height: 10rem;
+	vertical-align: middle;
+	line-height: 10rem;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	cursor: pointer;
+}
+
+label:before {
+	content: "\276D";
+	right: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+label:after {
+	content: "\276C";
+	left: 100%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+
+
+

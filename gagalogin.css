@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif', poppins;
+    outline: none;
+    color:black;
+}
+body {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 350px;
+}
+.wrapper {
+    min-height: 100vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 430px;
+    height: auto;
+    background: rgb(218, 218, 141);
+    padding: 35px 55px;
+    border-radius: 4px;
+}
+.form .title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.form .input_warp {
+    margin-bottom: 30px;
+    width: 320px;
+    position: relative;
+}
+.form .input_warp:last-child {
+    margin-bottom: 0;
+}
+.form .input_warp label {
+    display: block;
+    margin-bottom: 3px;
+}
+.form .input_warp .input {
+    padding: 16px;
+    width: 80%;
+    border: 2px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.form .input_warp .input {
+    background: white;
+    padding-right: 30px;
+}
+.form .input_warp .input:focus {
+    border-color: green;
+}
+.form .input_warp .error_msg {
+    font-size: 10px;
+    margin-bottom: 3px;
+    color: red;
+    display: block;
+}
+.form .input_warp .btn {
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: #fffa;
+    background: #1dbf74;
+    cursor: pointer;
+}

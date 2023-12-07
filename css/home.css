@@ -22,6 +22,7 @@
     scroll-behavior: smooth;
 }
 
+/*navbar */
 nav {
     position: fixed;
     display: flex;
@@ -36,6 +37,7 @@ nav {
     top: 0;
     z-index: 1;
 }
+
 
 
 .menu {
@@ -125,6 +127,8 @@ nav {
 .search i {
     padding-top: 8px;
 }
+
+/* SLide show */
 
 .slideshow-container {
     margin-top: 50px;

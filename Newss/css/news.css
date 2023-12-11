@@ -40,7 +40,6 @@ nav {
 .logo {
     font-size: 20px;
     font-weight: bold;
-
 }
 
 .menu {
@@ -84,7 +83,7 @@ nav {
 }
 
 .login button:hover {
-    color: rgb(102, 100, 100);
+    color: #f0ecec;
 }
 
 .search {
@@ -226,11 +225,10 @@ nav {
     margin: 5px;
     max-height: 50vh;
     margin-left: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .popular-news-title{
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -258,7 +256,6 @@ nav {
 }
 
 .card img {
-    padding-top: 10px;
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -330,62 +327,6 @@ nav {
     color: #666;
     font-size: 12px;
     margin: 0;
-}
-
-/* comment */
-.comment-box {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 30px;
-}
-
-.comment-box h2 {
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-}
-
-.comment-box input {
-    width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #2B3499;
-}
-
-.comment-box input:focus{
-    border: 1px solid #000;
-    outline: 0;
-}
-
-.comment-box textarea {
-    width: 100%;
-    height: 150px;
-    padding: 15px 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #2B3499;
-}
-
-.comment-box textarea:focus {
-    border: 1px solid #000;
-    outline: 0;
-}
-
-.comment-box button {
-    border: 0;
-    padding: 10px 20px;
-    background: #6d74c0;
-    font-size: 18px;
-    border-radius: 5px;
-    color: #ffff;
-}
-
-.comment-box button:hover {
-    background-color: #2B3499;
 }
 
 /* Trending */
@@ -481,6 +422,7 @@ nav {
     }
 }
 
+
 /* Footer */
 .footer-container{
     max-width: 1170px;
@@ -497,7 +439,7 @@ nav {
 }
 
 .footer {
-    font-size: 15px;
+    font-size: 0;
     background-color: #2B3499;
     padding: 30px 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -509,7 +451,7 @@ nav {
 }
 
 .footer-col h4 {
-    font-size: 20px;
+    font-size: 13px;
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 30px;
@@ -529,7 +471,7 @@ nav {
 }
 
 .footer-col ul li a {
-    font-size: 15px;
+    font-size: 11px;
     text-transform: capitalize;
     color: #ffff;
     text-decoration: none;
@@ -580,4 +522,18 @@ nav {
     .footer-col{
         width: 100%;
     }
+}
+
+/* card  */
+/* card  */
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
